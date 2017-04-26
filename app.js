@@ -1,7 +1,9 @@
 var express = require('express');
+var materialize = require('materialize-css');
 var fs = require('fs');
 var ejs = require('ejs');
 var app = express();
+var port = 8080;
 
 
 app.get('/', function(req, res) {
@@ -18,14 +20,18 @@ app.get('/courses', function(req, res) {
 
 app.get('/courses/:id', function(req, res) {
     fs.readFile('courses.json', 'utf8', function(err, data) {
-        var coursesParsed = JSON.parse(data);
-        var course = coursesParsed.filter( function(obj) {
-        return obj.id === parseInt(req.params.id);
-    })[0];
-   
+        var courses = JSON.parse(data);
+        var course = courses.filter( function(obj) {
+            return obj.id === parseInt(req.params.id);
+        })[0];
     res.locals = { course: course };
     res.render('course.ejs');
- });
+    });
 });
 
-app.listen(8080);
+app.get('/contact', function(req, res) {
+    res.sendFile(__dirname + 'contact.html');
+})
+
+app.listen(port);
+console.log('Server running on http://localhost:' + port);

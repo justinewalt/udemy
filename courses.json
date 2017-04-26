@@ -3,36 +3,42 @@
       "name": "Super Hard Math",
       "description": "Algebra basics is what this class is; and honey, it ain't easy!",
       "price": "79.95",
-      "length": "7 1/3 months"
+      "length": "7 1/3 months",
+      "id": 1
     },
     {
       "name": "Tricky Maths",
       "description": "Dis is Trig. If you like angles and other weird stuff, then this might be the course for you!",
       "price": "55.37",
-      "length": "4 months"
+      "length": "4 months",
+      "id": 2
     },
     {
       "name": "College Learning Maths",
       "description": "Calculus, because you already hate yourself, so why not.",
       "price": "223.49",
-      "length": "31 7/8 months"
+      "length": "31 7/8 months",
+      "id": 3
     },
     {
       "name": "Hand Farting 101",
       "description": "Do you pretending you're only 10, but are actually 30? Then this class is for you!",
       "price": "37.50",
-      "length": "2 hours"
+      "length": "2 hours",
+      "id": 4
     },
     {
       "name": "Jump Dancing",
       "description": "Jump and dance your way to being a slightly better dancer than 7 minutes ago!",
       "price": "534.97",
-      "length": "1,452 minutes"
+      "length": "1,452 minutes",
+      "id": 5
     },
     {
       "name": "Knee Slappin' Jokes",
       "description": "Do people hate you because you're boring and unfunny? Well we can teach you 3 jokes and people will hate you slightly less!",
       "price": "7.43",
-      "length": "5 months"
+      "length": "5 months",
+      "id": 6
     }
 ]
